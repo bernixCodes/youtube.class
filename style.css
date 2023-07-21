@@ -72,6 +72,7 @@ body {
   color: #fff;
   text-align: center;
   cursor: pointer;
+  border: none;
 }
 #last {
   border-radius: 50%;
@@ -81,19 +82,23 @@ body {
 .count-text {
   margin-top: -50px;
 }
-.thumbnail {
-  background-color: brown;
-  height: 90vh;
-}
+
 
 @media screen and (max-width: 900px) {
   body::-webkit-scrollbar {
     display: none;
+
   }
+  /* body{
+    overflow-y: scroll;
+  } */
   .container {
     grid-template-columns: 1fr;
     padding: 20px 0px;
   }
+.video-container{
+  max-height: 50vh;
+}
 
   .right {
     display: none;
@@ -108,16 +113,11 @@ body {
   .channel-info p {
     display: none;
   }
-  .thumbnail {
-    height: 45vh;
-    margin-top: 25px;
-  }
+ 
 }
 
-@media screen and (min-width: 901px) and (max-width: 1300px) {
-  /* body {
-    overflow: hidden;
-  } */
+@media screen and (min-width: 901px) and (max-width: 1400px) {
+
   .container {
     grid-template-columns: auto 30%;
   }
